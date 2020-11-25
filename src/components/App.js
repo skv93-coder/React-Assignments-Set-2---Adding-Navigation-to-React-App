@@ -15,11 +15,12 @@ class App extends Component {
             <div id="main">
         
                {/* Do not remove the main div */}
-            </div>
+           
             <Switch>
             <Router path="/about" Component={About}/>
-            <Router path="/" Component={Home}/>
+            <Router exact path="/" Component={Home}/>
             </Switch>
+            </div>
             </Router>
         )
     }
